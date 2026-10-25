@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="kk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101b3d">
+  <meta name="description" content="7-сыныпқа арналған дәрежелі өрнектер мен сан тізбектері туралы интерактив сабақ.">
+  <title>Дәреже зертханасы | 7-сынып математика</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="results-config.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="math-sky" aria-hidden="true"><span>×</span><span>2ⁿ</span><span>∑</span><span>+</span><span>7²</span><span>÷</span><span>π</span></div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Басты бетке өту"><span class="brand-icon">xⁿ</span><span>Дәреже<span class="brand-light">Зертхана</span></span></a>
+    <nav aria-label="Негізгі навигация">
+      <a href="#theory">Теория</a><a href="#games">Ойындар</a><a href="#reflection">Кері байланыс</a>
+    </nav>
+    <span class="grade-chip">7-СЫНЫП · АЛГЕБРА</span>
+  </header>
+
+  <main>
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="live-dot"></span> БҮГІНГІ САБАҚ · 21 ҚЫРКҮЙЕК</div>
+        <h1>Дәрежелі өрнектерді <span>түрлендірейік</span></h1>
+        <p class="hero-lead">Сан тізбегінің құпиясын ашып, дәрежелердің заңдылығын ойын арқылы меңгер.</p>
+        <div class="hero-meta"><span>◷ 45 минут</span><span>✳ Логика + есеп</span><span>⌁ Жеке жұмыс</span></div>
+        <form class="start-form" id="start-form">
+          <label for="student-name">Сабаққа қосылу үшін атыңды жаз</label>
+          <div class="form-row"><input id="student-name" name="student" type="text" placeholder="Мысалы, Айдана" maxlength="24" required><button class="button button-primary" type="submit">Бастау <span aria-hidden="true">→</span></button></div>
+          <small id="privacy-note">Google Sheets қосылымы бапталмаса, ұпай осы құрылғыда ғана есептеледі.</small>
+        </form>
+      </div>
+      <div class="hero-art" aria-label="Дәреже формуласын бейнелейтін иллюстрация">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="formula-card"><span class="formula-label">ДӘРЕЖЕ ЗАҢЫ</span><div class="formula">a<sup>m</sup> · a<sup>n</sup><b>=</b>a<sup>m+n</sup></div><span class="formula-caption">Негіздері бірдей болса,<br>көрсеткіштерді қосамыз</span></div>
+        <span class="float-token token-a">2⁴ = 16</span><span class="float-token token-b">a⁰ = 1</span><span class="float-token token-c">✦</span>
+      </div>
+    </section>
+
+    <section class="welcome-bar section-wrap" id="welcome" aria-live="polite"><span class="welcome-icon">✦</span><span id="welcome-text">Бүгінгі мақсат: заңдылықты байқау, болжам жасау, жауабын дәлелдеу.</span><span class="welcome-progress">САБАҚ МАҚСАТЫ</span></section>
+
+    <section class="section-wrap lesson-section" id="theory">
+      <div class="section-heading"><div><span class="eyebrow">01 — ҚЫСҚАША ҚАЙТАЛАУ</span><h2>Дәреже дегеніміз не?</h2></div><p>Бірдей көбейткіштерді көбейтуді ықшам жазудың жолы.</p></div>
+      <div class="theory-grid">
+        <article class="theory-card theory-main"><span class="card-number">01</span><span class="mini-label">ДӘРЕЖЕ</span><h3>a<sup>n</sup> = a · a · … · a</h3><p><b>a</b> — негіз, <b>n</b> — дәреже көрсеткіші. Негізді n рет көбейтеміз.</p><div class="example-pill">3<sup>4</sup> = 3 · 3 · 3 · 3 = 81</div></article>
+        <article class="theory-card"><span class="card-number">02</span><span class="mini-label">КӨБЕЙТУ</span><h3>a<sup>m</sup> · a<sup>n</sup> = a<sup>m+n</sup></h3><p>Негіздері бірдей дәрежелерді көбейткенде көрсеткіштері қосылады.</p><div class="example-pill">2<sup>3</sup> · 2<sup>2</sup> = 2<sup>5</sup></div></article>
+        <article class="theory-card"><span class="card-number">03</span><span class="mini-label">ДӘРЕЖЕЛЕУ</span><h3>(a<sup>m</sup>)<sup>n</sup> = a<sup>m·n</sup></h3><p>Дәрежені дәрежеге шығарғанда көрсеткіштер көбейтіледі.</p><div class="example-pill">(5<sup>2</sup>)<sup>3</sup> = 5<sup>6</sup></div></article>
+      </div>
+      <div class="sequence-note"><span class="sequence-icon">↗</span><div><b>Тізбектегі дәрежені байқа</b><p>2, 4, 8, 16, … — әр сан алдыңғысын 2-ге көбейту арқылы алынған. Бұл — 2-нің дәрежелері.</p></div><span class="sequence-eq">2¹ → 2² → 2³ → 2⁴</span></div>
+    </section>
+
+    <section class="games-section" id="games">
+      <div class="section-wrap games-wrap">
+        <div class="section-heading games-heading"><div><span class="eyebrow">02 — БІЛІМІҢДІ СЫНА</span><h2>Ойын алаңы</h2></div><p>Дұрыс жауап жинап, математикалық шеберлігіңді көрсет!</p></div>
+        <div class="game-grid">
+          <article class="game-card sequence-game">
+            <div class="game-top"><span class="game-icon">⌁</span><span class="game-tag">1-ОЙЫН · ЗАҢДЫЛЫҚ</span><span class="points">+10 ұпай</span></div>
+            <h3>Тізбекті жалғастыр</h3><p class="game-instruction">Қатардағы заңдылықты тап та, бос орынды толтыр.</p>
+            <div class="number-sequence" aria-label="Бір, төрт, он алты, бос орын, екі жүз елу алты">1 <i>→</i> 4 <i>→</i> 16 <i>→</i> <strong>?</strong> <i>→</i> 256</div>
+            <form class="answer-form" id="sequence-form"><label class="sr-only" for="sequence-answer">Жетіспейтін сан</label><input id="sequence-answer" inputmode="numeric" autocomplete="off" placeholder="Санды енгіз" required><button class="button button-dark" type="submit">Тексеру</button></form>
+            <p class="game-feedback" id="sequence-feedback" aria-live="polite">Кеңес: сандардың бірінен кейін бірі неше есе өсетінін тексер.</p>
+          </article>
+          <article class="game-card power-game">
+            <div class="game-top"><span class="game-icon purple-icon">✳</span><span class="game-tag">2-ОЙЫН · ДӘРЕЖЕ</span><span class="points purple-points">+10 ұпай</span></div>
+            <h3>Формуланы таңда</h3><p class="game-instruction">(3<sup>2</sup>)<sup>2</sup> өрнегінің ықшам түрін белгіле.</p>
+            <div class="choice-list" role="group" aria-label="Жауап нұсқалары">
+              <button class="choice-button" type="button" data-answer="wrong">3<sup>2+2</sup> <span>А</span></button>
+              <button class="choice-button" type="button" data-answer="correct">3<sup>2·2</sup> <span>Ә</span></button>
+              <button class="choice-button" type="button" data-answer="wrong">3<sup>2</sup> · 2 <span>Б</span></button>
+            </div>
+            <p class="game-feedback" id="power-feedback" aria-live="polite">Ережені есіңе түсір: дәрежені дәрежеге шығарғанда не істейміз?</p>
+          </article>
+        </div>
+        <div class="score-bar"><span class="score-star">★</span><span>Жинаған ұпайың</span><strong id="score">0</strong><span class="score-outof">/ 20</span><div class="score-track"><span id="score-fill"></span></div><span class="score-message" id="score-message">Алға, сенің қолыңнан келеді!</span></div>
+        <div class="score-sync"><p id="sync-status" role="status" aria-live="polite">Ұпай Google Sheets қосылымы бапталғаннан кейін мұғалімге жіберіледі.</p><a id="teacher-results-link" href="#" target="_blank" rel="noopener" hidden>Мұғалімнің нәтижелер кестесін ашу ↗</a></div>
+      </div>
+    </section>
+
+    <section class="section-wrap reflection-section" id="reflection">
+      <div class="reflection-copy"><span class="eyebrow">03 — САБАҚТЫ ҚОРЫТЫНДЫЛА</span><h2>Өзіңді бағала</h2><p>Бүгінгі сабақтан алған ойыңмен бөліс. Әр жауап — алға жасалған қадам.</p><div class="reflection-stamp">ҚҚҚ <span>КЕРІ БАЙЛАНЫС</span></div></div>
+      <form class="reflection-form" id="reflection-form">
+        <label for="interesting">Қызық болғаны</label><textarea id="interesting" name="interesting" rows="2" placeholder="Бүгін мен үшін қызық болды..."></textarea>
+        <label for="difficult">Қиын болғаны</label><textarea id="difficult" name="difficult" rows="2" placeholder="Маған әлі де жаттығу керек..."></textarea>
+        <label for="useful">Пайдалы болғаны</label><textarea id="useful" name="useful" rows="2" placeholder="Мен бүгін үйрендім..."></textarea>
+        <button class="button button-primary" type="submit">Жауабымды жіберу <span aria-hidden="true">↗</span></button>
+        <p id="reflection-feedback" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+  <footer class="site-footer"><span class="footer-mark">xⁿ</span><span>Математика — заңдылықты көру өнері.</span><span>7-СЫНЫП · АЛГЕБРА</span></footer>
+</body>
+</html>
